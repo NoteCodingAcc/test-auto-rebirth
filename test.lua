@@ -64,12 +64,13 @@ local Toggle = Tab:CreateToggle({
               true
           )
         
-        task.wait(1)
+        task.wait(.75)
           
           local Event2 = game:GetService("ReplicatedStorage").Remotes.RebirthPurchase
           Event2:InvokeServer(
               "Cash"
           )
+         task.wait(10)
         
         end
     end,
