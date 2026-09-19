@@ -47,7 +47,7 @@ local Section = Tab:CreateSection("Main Section")
 local AutoRB = false
 
 local Toggle = Tab:CreateToggle({
-    Name = "Auto Collect Orb",
+    Name = "Auto Rebirth",
     CurrentValue = false,
     Flag = "AutoRB", -- A flag is the identifier for the configuration file; make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
@@ -77,7 +77,7 @@ local Toggle = Tab:CreateToggle({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Open Infinite Yield",
+   Name = "Open IY",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
         end,
